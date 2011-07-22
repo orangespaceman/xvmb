@@ -1,0 +1,816 @@
+/*
+ * Global CSS
+ */
+
+/*
+ * Eric Meyer's Global Reset
+ * http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/
+ */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, font, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, dialog, figure, footer, header,
+	hgroup, menu, nav, section,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		outline: 0;
+		font-weight: inherit;
+		font-style: inherit;
+		font-size: 100%;
+		font-family: inherit;
+		vertical-align: baseline;
+	}
+
+	/* remember to define focus styles! */
+	:focus {
+		outline: 0;
+	}
+
+	body {
+		line-height: 1;
+		color: black;
+		background: white;
+	}
+
+	ol, ul {
+		list-style: none;
+	}
+
+	/* tables still need 'cellspacing="0"' in the markup */
+	table {
+		border-collapse: separate;
+		border-spacing: 0;
+	}
+
+	caption, th, td {
+		text-align: left;
+		font-weight: normal;
+	}
+
+	blockquote:before, blockquote:after,
+	q:before, q:after {
+		content: "";
+	}
+
+	blockquote, q {
+		quotes: "" "";
+	}
+	
+	/* HTML 5 element fixes for older browsers */
+	header, nav, article, section, figure, aside, footer { display: block; }
+	time { display: inline;}
+
+
+/*
+ * Custom fonts
+ */
+		@font-face {
+			font-family: 'BelligerentMadnessRegular';
+			src: url('../../fonts/Belligerent-Madness/belligerent-webfont.eot');
+			src: local('☺'), url('../../fonts/Belligerent-Madness/belligerent-webfont.woff') format('woff'), url('../../fonts/Belligerent-Madness/belligerent-webfont.ttf') format('truetype'), url('../../fonts/Belligerent-Madness/belligerent-webfont.svg#webfontkcpgGMdg') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'DanielRegular';
+			src: url('../../fonts/Daniel/daniel-webfont.eot');
+			src: local('☺'), url('../../fonts/Daniel/daniel-webfont.woff') format('woff'), url('../../fonts/Daniel/daniel-webfont.ttf') format('truetype'), url('../../fonts/Daniel/daniel-webfont.svg#webfontGYTgQpIq') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'DesyrelRegular';
+			src: url('../../fonts/Desyrel/desyrel-webfont.eot');
+			src: local('☺'), url('../../fonts/Desyrel/desyrel-webfont.woff') format('woff'), url('../../fonts/Desyrel/desyrel-webfont.ttf') format('truetype'), url('../../fonts/Desyrel/desyrel-webfont.svg#webfontfotxpUe5') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'ElliotSixRegular';
+			src: url('../../fonts/ElliotSix/ElliotSix-webfont.eot');
+			src: local('☺'), url('../../fonts/ElliotSix/ElliotSix-webfont.woff') format('woff'), url('../../fonts/ElliotSix/ElliotSix-webfont.ttf') format('truetype'), url('../../fonts/ElliotSix/ElliotSix-webfont.svg#webfontIdhCtIcA') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'HarabaraHandItalic';
+			src: url('../../fonts/HarabaraHand/HarabaraHand-webfont.eot');
+			src: local('☺'), url('../../fonts/HarabaraHand/HarabaraHand-webfont.woff') format('woff'), url('../../fonts/HarabaraHand/HarabaraHand-webfont.ttf') format('truetype'), url('../../fonts/HarabaraHand/HarabaraHand-webfont.svg#webfontmARvnGBm') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'KaratulaNormal';
+			src: url('../../fonts/Karatula/KARAN___-webfont.eot');
+			src: local('☺'), url('../../fonts/Karatula/KARAN___-webfont.woff') format('woff'), url('../../fonts/Karatula/KARAN___-webfont.ttf') format('truetype'), url('../../fonts/Karatula/KARAN___-webfont.svg#webfontNU1WDoAk') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'LaffayetteComicProRegular';
+			src: url('../../fonts/LaffayetteComicPro/Laffayette_Comic_Pro-webfont.eot');
+			src: local('☺'), url('../../fonts/LaffayetteComicPro/Laffayette_Comic_Pro-webfont.woff') format('woff'), url('../../fonts/LaffayetteComicPro/Laffayette_Comic_Pro-webfont.ttf') format('truetype'), url('../../fonts/LaffayetteComicPro/Laffayette_Comic_Pro-webfont.svg#webfontvUJQBftx') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'PecitaMedium';
+			src: url('../../fonts/Pecita/Pecita-webfont.eot');
+			src: local('☺'), url('../../fonts/Pecita/Pecita-webfont.woff') format('woff'), url('../../fonts/Pecita/Pecita-webfont.ttf') format('truetype'), url('../../fonts/Pecita/Pecita-webfont.svg#webfontCooZ7M2s') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'WCManoNegraBtaRegular';
+			src: url('../../fonts/WC-Mano-Negra-Bta/WCManoNegraBta-webfont.eot');
+			src: local('☺'), url('../../fonts/WC-Mano-Negra-Bta/WCManoNegraBta-webfont.woff') format('woff'), url('../../fonts/WC-Mano-Negra-Bta/WCManoNegraBta-webfont.ttf') format('truetype'), url('../../fonts/WC-Mano-Negra-Bta/WCManoNegraBta-webfont.svg#webfonte6F4DwaZ') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'YearsupplyoffairycakesRegular';
+			src: url('../../fonts/Year-supply-of-fairy-cakes/Yearsupplyoffairycakes-webfont.eot');
+			src: local('☺'), url('../../fonts/Year-supply-of-fairy-cakes/Yearsupplyoffairycakes-webfont.woff') format('woff'), url('../../fonts/Year-supply-of-fairy-cakes/Yearsupplyoffairycakes-webfont.ttf') format('truetype'), url('../../fonts/Year-supply-of-fairy-cakes/Yearsupplyoffairycakes-webfont.svg#webfont3G1FB2Yd') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		
+/* HTML elements */
+	html {
+	}
+	
+	body {
+		background: url(../../img/site/bg_wood-small.jpg) #000 repeat;
+		overflow:hidden;
+		color:#666;
+		font:62.5%/1.25 Helvetica, Arial, sans-serif; /* reset 1em to 10px */
+	}
+
+	/* headings */
+		h1,
+		h2, 
+		h3, 
+		h4 { 
+		}
+
+		h1 { 
+			line-height:1;
+			font-size:3.0em;
+			font-weight:bold;
+			margin:1em 50px;
+		}
+
+		h2 {
+			font-size:2.4em;
+			margin-bottom:1em;
+		}
+		
+		h3 {
+			font-size:2.0em;
+			font-weight:bold;
+			margin-bottom:1em;
+		}
+		
+		h4 {
+			font-size:1.3em;
+		}
+		
+		/* headings - extra classes */
+
+
+	/* forms */
+		fieldset { 
+			border:0; 
+		}
+	
+		legend { 
+			display:none; 
+		}
+
+		form {
+		}
+
+		/* reset all standard form fonts - cross-browser compatibility */
+		form * {
+			font-family:LaffayetteComicProRegular, Arial, Helvetica, sans-serif;
+		}
+
+		input,
+		textarea {
+			font-size:1.2em;
+		}
+	
+		select {
+			font-size:1.2em;
+		}
+	
+		option {
+		}
+
+		label, 
+		form p {
+			display:block;
+			font-size:1.2em;
+			color:#333;
+		}
+	
+		textarea {
+			border:1px solid #c0c0c0;
+			font-size:1.6em;
+			padding:4px;
+			width:17em;
+		}
+	
+		/* forms - extra classes */
+			input.text {
+				border:1px solid #c0c0c0;
+				margin-bottom:0.5em;
+				padding:4px 4px 4px 4px;
+				width:17em;
+			}
+			
+			input.text,
+			option,
+			textarea {
+				font-family:saxMonoRegular, monospace;
+			}
+			
+			input.text:focus,
+			textarea:focus {
+				-moz-box-shadow: 0px 0px 10px #ccc;
+				-webkit-box-shadow:0px 0px 10px #ccc;
+				box-shadow: 0px 0px 10px #ccc;				
+				background:#eee;
+			}
+		
+			input.text.inactive {
+				color:#999;
+			}
+
+			input.radio {
+			}
+		
+			input.checkbox {
+				float:left;
+				margin-right:5px;
+			}
+		
+			p.error,
+			p.submit-error,
+			label.error {
+				color:#f90;
+				font-weight:bold;
+			}
+			
+			p.error,
+			p.submit-error {
+			}
+
+			button,
+			.button {
+				border:0px;
+				color:#999;
+				cursor:pointer;
+				overflow:visible;
+				width:auto;
+				text-align:center;
+				font-size:1em;
+				font-weight:bold;
+				background:#f2f2f2;
+				padding:8px 10px 2px 10px;
+				
+				-moz-border-radius: 3px;
+				-webkit-border-radius: 3px;
+				border-radius: 3px;					
+			}
+			
+			button:hover,
+			.button:hover {
+				background:#518d36;
+				color:#fff;
+			}
+			
+			
+			/* forms - input containers */
+				.input-container {
+					position:relative;
+					margin-bottom:1em;
+				}
+
+				.input-container label {
+					float:left;
+					width:5em;
+					margin-right:1em;
+					padding-top:0.3em;
+					font-size:1em;
+				}
+
+				.input-container p.error {
+					position:absolute;
+					right:-190px;
+					top:0;
+					width:170px;
+					margin:0;
+					padding:5px 5px 2px 20px;
+					background:#333;
+					font-size:1.2em;
+					float:left;
+					
+					-moz-border-radius:3px;
+					-webkit-border-radius:3px;
+					border-radius:3px;
+				}
+
+				.input-container input.text,
+				.input-container textarea {
+					float:left;
+					
+					font-size:1em;
+					padding:4px;
+					border:1px solid #ccc;
+					margin-bottom:0.5em;
+					margin-right:10px;
+					
+					-moz-border-radius:3px;
+					-webkit-border-radius:3px;
+					border-radius:3px;					
+				}
+				
+				.input-container .button {
+					float:left;
+					margin-right:10px;
+				}
+				
+				.input-container img {
+					float:left;
+					margin-top:5px;
+				}
+			
+			
+	/* tables */
+
+
+	/* lists */
+		ul,
+		ol, 
+		dl {
+			font-size:1.4em;
+			margin-bottom:1.5em;
+		}
+
+		ol {
+			list-style: decimal;
+			margin-left: 2em;
+		}
+		
+		ul {
+			margin-left:0;
+		}
+
+		li {
+			line-height:1.5;
+			padding-bottom:0.5em;
+		}
+		
+		ul li {
+			padding-left:12px;
+		}
+
+		
+		/* lists - nested lists */
+			li ol, 
+			li ul { 
+				margin:0 2em;
+			}
+			
+			li li { 
+				font-size:1em; 
+			}
+
+		/* lists - extra classes */
+			
+
+	/* text */
+		p,
+		address,
+		time {
+			font-size:1.4em;
+			font-style:normal;
+			margin-bottom:1em;
+			line-height:1.5;
+		}
+		
+		time {
+			display:block;
+			color:#999;
+		}
+		
+		em { 
+			font-style:italic;
+		}
+		
+		strong {
+			font-weight:bold;
+			color:#333;
+		}
+		
+		/* text:extra classes */
+			
+
+	/* misc */
+		iframe {
+		}
+		
+		img {
+			background:transparent no-repeat left top;
+			margin-bottom:1em;
+		}
+		
+		/* misc: extra classes */
+			
+
+	/* links */
+		a {
+			color:#fff; 
+			outline:0; 
+			font-style:inherit; 
+			font-weight:bold;
+			text-decoration:none; 
+		}
+	
+		a:hover,
+		a:active,
+		a:focus { 
+			color:#ccc;
+		}
+		
+		a:hover {
+			cursor:pointer;
+		}
+		
+		a:focus { 
+			outline:1px dotted #666;
+		}
+		
+		/* links - extra classes */
+
+		
+	
+	/* deprecated tags - alerting CMS users that they are using illegal tags */
+	/*b, big, blink, center, font, i, layer, marquee, small, u {
+			background:yellow;
+			border:2px dashed green;
+			color:red;
+			font-size:30px;
+			font-weight:bold;
+		}
+		b:after, big:after, blink:after, center:after,  font:after, i:after, layer:after, marquee:after, small:after, u:after { 
+			content:" You are using a deprecated tag; please fix." 
+		}*/
+
+
+/* Extra classes */
+	/* last element in a row */
+		.row-end {
+			margin-right:0 !important;
+		}
+	
+	
+	/* print styles */
+		.printonly { 
+			display:none !important; 
+		}
+		
+		
+	/* clearfix - fixes float clearing issues */
+		 .clearfix:after { /* fixed for IE */
+			 clear:both; 
+			 content:"."; 
+			 display:block; 
+			 height:0; 
+			 visibility:hidden;
+		}
+		
+
+	/* Text included for non-visual users, hide content for screen */
+		.context {
+			height:1px; 
+			left:0px; 
+			overflow:hidden;
+			position:absolute; 
+			top:-500px;
+			width:1px; 
+		}
+		
+
+	/* Hides contents for screen, but leaves structure in place - for transparent images where the below can't be used */
+		.context-flow {
+			text-indent:-20000px;
+			background:transparent no-repeat left top;
+		}
+		
+
+	/* text that is 'replaced' by an image (via a span) */
+		.replaced {
+			position:relative;
+		}
+
+		.replaced span {
+			background:transparent no-repeat left top;
+			display:block;
+			height:100%;
+			left:-1px;
+			position:absolute;
+			top:0;
+			width:100%;
+		}
+		
+
+	/* horizontal rule (hr) - allows universal control */
+		.hr {
+			border-top:1px solid #d4cdcd; /* necessary to ensure hr is only 1px high in all browsers */
+			clear:both;
+			color:#d4cdcd; /* needed for IE */
+			height:1px;
+			margin:30px 0 30px 0;
+			padding:0;
+		}
+
+		hr {
+			display:none;
+		}
+	
+	
+	/* horizontal navigation list */
+        ul.horiznavlist { }
+
+        /* float selected element and all other links */
+        ul.horiznavlist li {
+            display : block;
+            float : left;
+            padding : 0px 6px 0px 6px;
+            border-right : 1px solid #000;
+            background : none;
+        }
+
+        /* remove left padding from first item in a list */
+        ul.horiznavlist li.first {
+            padding-left : 0px !important;
+        }
+
+        /* remove right padding from last item in a list */
+        ul.horiznavlist li.last {
+            padding-right : 0px !important;
+            border-right : 0px !important;
+        }
+
+
+/* global ids / areas */
+	#wrapper {
+		
+	}
+	
+	p#add {
+		position:absolute;
+		right:10px;
+		top:10px;
+		z-index:1000000;		
+		font-size:3em;
+		line-height:1;
+	}
+	
+	p#count {
+		position:absolute;
+		left:10px;
+		bottom:10px;
+		margin:0;
+		z-index:1;
+		font-size:1em;
+		color:#b78e56;
+	}
+	
+	p#count::-moz-selection 	{ background: #000; color: #fff; }
+	p#count::-webkit-selection 	{ background: #000; color: #fff; }
+	p#count::selection 			{ background: #000; color: #fff; } 
+	
+	#loader {
+		position:absolute;
+		right:10px;
+		bottom:10px;
+		z-index:1000000;
+	}
+	
+	
+	/* note */
+		.note {
+			width:185px; /* 225 */
+			height:176px; /* 206 */
+			float:left;
+			padding:15px 20px 15px 20px;
+			background:transparent no-repeat left top;
+			position:absolute;
+			left:10px;
+			top:10px;
+			overflow:hidden;
+			cursor:move;
+		}
+		
+		#note-0 p {
+			font-size:2.4em;
+		}
+		
+		#note-0 p em.when {
+			font-size:0.5em;
+			position:absolute;
+			bottom:30px;
+			left:18px;
+		}
+		
+	
+		.note p {
+			margin:0;
+		}
+	
+		.note p .what { 
+			display:block;
+		}
+	
+		.note p .who,
+		.note p .when,
+		.note p .where { 
+			
+		}
+	
+	
+		.bg-1		{ background-image:url(../../img/site/bg_post-it_1_24.png); }
+		.bg-2		{ background-image:url(../../img/site/bg_post-it_2_24.png); }
+		.bg-3		{ background-image:url(../../img/site/bg_post-it_3_24.png); }
+		.bg-4		{ background-image:url(../../img/site/bg_post-it_4_24.png); }
+		.bg-5		{ background-image:url(../../img/site/bg_post-it_5_24.png); }
+		.bg-6		{ background-image:url(../../img/site/bg_post-it_6_24.png); }
+		.bg-7		{ background-image:url(../../img/site/bg_post-it_7_24.png); }
+		.bg-8		{ background-image:url(../../img/site/bg_post-it_8_24.png); }
+		.bg-9		{ background-image:url(../../img/site/bg_post-it_9_24.png); }
+		.bg-10		{ background-image:url(../../img/site/bg_post-it_10_24.png); }
+
+	
+		.font-1 	{ font-family: BelligerentMadnessRegular, "Comic Sans MS",  cursive; font-size:0.9em; }
+		.font-2 	{ font-family: DanielRegular, "Comic Sans MS",  cursive; font-size:0.9em; }
+		.font-3 	{ font-family: DesyrelRegular, "Comic Sans MS",  cursive; font-size:0.9em; }
+		.font-4 	{ font-family: ElliotSixRegular, "Comic Sans MS",  cursive; font-size:0.8em; }
+		.font-5 	{ font-family: HarabaraHandItalic, "Comic Sans MS",  cursive; font-size:0.9em; }
+		.font-6 	{ font-family: KaratulaNormal, "Comic Sans MS",  cursive; font-size:0.8em;}
+		.font-7 	{ font-family: LaffayetteComicProRegular, "Comic Sans MS",  cursive; font-size:0.8em; }
+		.font-8 	{ font-family: PecitaMedium, "Comic Sans MS",  cursive; font-size:0.9em; }
+		.font-9 	{ font-family: WCManoNegraBtaRegular, "Comic Sans MS",  cursive; font-size:0.9em; }
+		.font-10 	{ font-family: YearsupplyoffairycakesRegular, "Comic Sans MS",  cursive; font-size:0.8em; }
+	
+	
+	
+	/* overlays */
+		#add-form.inline {
+			display:none;
+		}
+		
+		.overlay-container {
+			background:url(../../img/site/overlay_bg_24.png) transparent no-repeat left top;
+			position:absolute;
+			padding-top:8px;
+			right:15px;
+			top:10px;
+			width:308px;
+			z-index:10000000;
+			text-align:left;
+		}
+
+		.overlay {
+			background:url(../../img/site/overlay_bg_24.png) transparent no-repeat right bottom;
+			padding:13px 20px 10px 20px;
+		}
+
+		/* position the header so the content below starts at the top of the overlay */
+		.overlay .overlay-header {
+			position:absolute;
+			right:20px;
+			top:20px;
+		}
+
+		.overlay a.overlay-close {
+			display:block;
+			float:right;
+			width:16px;
+			height:16px;
+		}
+
+		.overlay-loading {
+			float:right;
+			width:16px;
+			margin-right:10px;
+		}
+
+		/* initial overlay height - expanded automatically by JS */
+		.overlay-content-container {
+			/*overflow:hidden;*/
+			margin-right:16px;
+		}
+
+		/* overlay - content  */
+			.overlay h2 {
+				font-size:1.4em;
+			}
+
+			.overlay p.button {
+				float:right;
+			}
+
+
+		/* generic overlay styles */
+			.overlay {	}
+
+			/* overlay form styles */
+				.overlay form ol {
+					font-size:1em;
+					margin:0;
+				}
+
+				.overlay form ol li {
+					padding-bottom:0.8em;
+				}
+
+				.overlay form ol li label {
+					float:left;
+					width:7.5em;
+					font-weight:normal;
+					font-size:1em;
+					padding-top:5px;
+				}
+
+				.overlay form ol li input.text,
+				.overlay form ol li textarea {
+					width:4.7em;
+					font-size:1em;
+					border:0;
+					background:#cfcac3;
+					border-radius:3px;
+					-moz-border-radius:3px;
+					-webkit-border-radius:3px;
+				}
+
+				.overlay form input.button {
+					display:inline;
+					float:right;
+					margin-right:10px;
+				}
+
+				.overlay p#required-fields {
+					position:absolute;
+					bottom:20px;
+					left:20px;
+					font-size:1em;
+				}
+
+
+		/* basket overlay styles */
+			#overlay-newsletter {
+				right:135px;
+				top:40px;
+			}
+			
+			
+			.overlay p { 
+				font-family: LaffayetteComicProRegular, "Comic Sans MS",  cursive; 
+			}
+			
+			
+		/* text length counter for 'what' */
+			#ajax-form .what-container {
+				position:relative;
+			}
+			
+			p#counter {
+				position:absolute;
+				right:-10px;
+				top:0;
+				font-size:1em;
+			}
+			
+			p#counter.over {
+				color:#f90;
+			}
