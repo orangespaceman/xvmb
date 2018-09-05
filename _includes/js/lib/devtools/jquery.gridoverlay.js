@@ -3,7 +3,7 @@
  *
  * http://code.google.com/p/jsgridoverlay/
  *
- * Copyright (c) 2006 - 2008 Michael Allanson, Pete Goodman, Richard Hallows
+ * Copyright (c) 2006 - 2008 
  *
  * $Id: jquery.gridoverlay.js 11 2008-09-17 17:56:41Z richhallows $
  *
