@@ -73,7 +73,7 @@ class PageBuilder {
 				<p>
 					<em class="who">XVMB Vault of Marketing Bollocks</em>
 					<em class="where"></em>
-					<em class="when">Actioned as a Goodman/Rowbotham <br/>Next Step Delivery</em>
+					<em class="when">Actioned as a <br/>Next Step Delivery</em>
 				</p>
 			</div>
 			
